@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishna Restaurant</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #333;
+            background-image: url('img2.jpeg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            margin: 0;
+            padding: 10px;
+            font-size: 1.8em;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 80px 0;
+        }
+
+        section h2 {
+            font-size: 2.5em;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .menu-item {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .menu-item-details {
+            width: 45%;
+            padding: 15px;
+            margin-bottom: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .special-details {
+            padding: 15px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .gallery-item {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        address {
+            font-style: normal;
+            font-size: 1.1em;
+        }
+
+        #contact-form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        #contact-form input,
+        #contact-form textarea,
+        #contact-form button {
+            margin-bottom: 15px;
+            padding: 10px;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #contact-form button {
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #contact-form button:hover {
+            background-color: #555;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            clear: both;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Krishna Restaurant</h1>
+            <nav>
+                <ul>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#specials">Chef's Specials</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#location">Location</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container" style="color:white;">
+            <h2>Welcome to Krishna Restaurant</h2>
+            <p>While some beginner restaurateurs might think that the menu is just a food list, savvy people in the industry know that restaurant menu descriptions make as much as a difference as menu pricing. Even researchers were curious if people spend more when the menu descriptions are appetizing. A study from 2019 shows that the menu description triggers 45% of the buying decision for a specific dish. The same paper identified the main categories of restaurant description words that have an impact on the client’s decision to order those items. The following factors have the biggest influence for clients selecting a dish: Identifying the food as local; Giving proof that the recipe is made with organic ingredients; Items that promote a sense of place; Explaining the ingredients in the local language; Using sensory words; Including sentimental references. Does this sound difficult to do? We are here to help and provide simple dos and don’ts. By the power of example, you will be able to create food descriptions that have orders flying out to your kitchen faster than the cooks can make them.</p>
+        </div>
+    </section>
+
+    <section id="menu">
+        <div class="container">
+            <h2 style="color:white;">Our Menu</h2>
+            <div class="menu-item">
+                <div class="menu-item-details">
+                    <h3>Sandwiches</h3>
+                    <p>Plain Sandwich - $4</p>
+                    <p>Grilled Sandwich - $5</p>
+                    <p>Club Sandwich - $6</p>
+                </div>
+                <div class="menu-item-details">
+                    <h3>Soups</h3>
+                    <p>Tomato Soup - $10</p>
+                </div>
+                <div class="menu-item-details">
+                    <h3>South-Indian</h3>
+                    <p>Dosa - $25</p>
+                    <p>Rice Idli - $21</p>
+                </div>
+                <div class="menu-item-details">
+                    <h3>Pizzas</h3>
+                    <p>Plain Cheese Pizza - $10</p>
+                    <p>Tandoori Pizza - $16</p>
+                    <p>Super Veggie Pizza (Double Cheese) - $18</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="specials">
+        <div class="container">
+            <h2 style="color:white;">Chef's Specials</h2>
+            <div class="special">
+                <div class="special-details">
+                    <h3>Krishna Special</h3>
+                    <p>Paneer and Cheese Special - $30</p>
+                    <p>Angamaly Manga Curry - $35</p>
+                    <p>Coconut Pudding - $34</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery">
+        <div class="container">
+            <h2 style="color:white;">Gallery</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="img.jpeg" alt="Gallery image">
+                    <img src="img2.jpeg" alt="Gallery image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="location">
+        <div class="container" style="color:white;">
+            <h2>Location</h2>
+            <p>Find us at:</p>
+            <address>
+                Krishna Restaurant<br>
+                Ahmedabad, Gujarat, 380061
+            </address>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2 style="color:white;">Contact Us</h2>
+            <p style="color:white;">For reservations and inquiries:</p>
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your message" rows="4" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Krishna Restaurant. Shivani Patel.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
